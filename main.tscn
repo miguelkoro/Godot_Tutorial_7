@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://ia3fr3a2it3d"]
+
+[ext_resource type="Script" uid="uid://bitvvh3mr1r6h" path="res://RandomSpawner.gd" id="1_ig7tw"]
+[ext_resource type="PackedScene" uid="uid://b4c7x102n3fro" path="res://node_2d.tscn" id="2_0xm2m"]
+
+[node name="Node3D" type="Node3D"]
+script = ExtResource("1_ig7tw")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.58504283, 0.81100243, 0, -0.81100243, 0.58504283, 1.2254105, 45.53961, 50.652725)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.38797292, 0.52124643, -0.7601178, -0.23827751, 0.85340524, 0.46359828, 0.8903376, 0.0012553781, 0.45529944, -3.8767095, 3.2439911, 0.48495817)
+
+[node name="Node2D" parent="." instance=ExtResource("2_0xm2m")]

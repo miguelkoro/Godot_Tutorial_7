@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://icjncpr6xggi"]
+
+[ext_resource type="Script" uid="uid://f6smv32we7rw" path="res://fast_noise.gd" id="1_fbeva"]
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_fbeva"]
+
+[node name="Node3D" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 0.9232639, 0.38416642, 0, -0.38416642, 0.9232639, 0, 0, 0)
+script = ExtResource("1_fbeva")
+noise = SubResource("FastNoiseLite_fbeva")
+height_sc = 3.0
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.90332043, -0.4289667, 0, 0.4289667, 0.90332043, 0, -24.245888, 331.05524)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.47777215, 0, -0.8784838, 0.6947769, 0.6119689, 0.37786132, 0.53760475, -0.7908819, 0.29238167, -7.062273, 3.2863297, 0)
